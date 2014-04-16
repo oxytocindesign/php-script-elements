@@ -13,7 +13,7 @@ $KalensPassword = ('this said something else but its not for the internet to kno
 $hashedPassword = $hasher->HashPassword($KalensPassword);
 
 // example of the CheckPassword function, we need to pull the password
-// data from the MYSQL table or else this entire script is a useless parlour trick
+// data from the MYSQL table or else this is pointless
 
 //fail example
 $hasher->CheckPassword('the wrong password', $hashedPassword); // false
@@ -24,3 +24,4 @@ if ($hasher->CheckPassword('this said something else but its not for the interne
 	
 echo "<p>The password hash is: \"$hashedPassword\"</p>";
 ?>
+
